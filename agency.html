@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WB PIXEL AGENCY</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      height: 60px;
+      width: 98%;
+      background-color: limegreen;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+    .logo {
+      color: white;
+      font-size: 1.5em;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .nav {
+      display: flex;
+      gap: 20px;
+    }
+    .nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .nav a:hover {
+      background-color: #007bff;
+    }
+    .login-btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      text-transform: uppercase;
+      transition: background-color 0.3s ease;
+    }
+    .login-btn:hover {
+      background-color: #0056b3;
+    }
+    .content{
+      height: 150px;
+      width: 70%;
+      color: limegreen;
+      font-size: 150px;
+      font-weight: bold;
+      margin: auto;
+      text-align: center;
+
+    }
+    P{
+      height: 70PX;
+      width: 60%;
+      color: white;
+      margin: auto;
+      text-align: center;
+      margin-top: 250px;
+      font-weight: bold;
+    }
+   .main{
+    background: url(background.jpg);
+   }
+   .last{
+    height: 50px;
+    width: 1300px;
+    margin: auto;
+    background-color: grey;
+    color: darkgrey;
+    text-align: center;
+    margin-top: 100px;
+    box-shadow: 1px ,1px ,1px ,white;
+   }
+   .img{
+    float: left;
+    margin-top: 30px;
+    margin-left: 10px;
+   }
+   h2{
+    margin: auto;
+   }
+    @media (max-width: 570px) {
+      .header, .nav, .logo {
+        flex-direction: column;
+        text-align: center;
+      }
+      .img {
+        display: block;
+        margin: 0 auto 20px auto;
+      }
+      .content {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+        margin-top: 50px;
+      }
+      .last {
+        width: 100%;
+      }
+    }
+</style>
+</head>
+<body>
+<div class="main">
+  <header class="header">
+    <div class="logo">WEB PIXEL AGENCY</div>
+    <nav class="nav">
+      <a href="agency.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="port.html">PORTFOLIO</a>
+      <a href="srv.html">SERVICES</a>
+    </nav>
+    <button class="login-btn" onclick="redirectToLogin()">LOG IN</button>
+  </header>
+  <img src="web-pixel.png" height="200px" width="200px" class="img">
+  <div class="content">
+    WEB PIXEL AGENCY
+  </div>
+  <p>
+    WELCOME TO WEB-PIXEL AGENCY HERE WE ARE PROVIDING BEST SERVICES IN THE DELHI,YOU CAN CHECK OUR PORTFOLIO TO IDENTIFY OUR WORK. WE ARE PROVIDING THESE SERVICES AT YOU BUDGET PRICES.
+  </p>
+  <div class="last">
+    <h2>CHECK OUR TERMS AND CONDITIONS <a href="here.html">HERE</a></h2>
+  </div>
+  
+  </div>  
+  <script>
+    function redirectToLogin() {
+      alert("Redirecting to login page...");
+      window.location.href = 'login.html';
+    }
+  </script>
+</body>
+</html>
